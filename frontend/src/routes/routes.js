@@ -8,6 +8,9 @@ import LoginPage from '../page/loginPage';
 import TeacherSignup from '../page/teacherSignup';
 import StudentSignup from '../page/studentSignup';
 import CombineSignup from '../page/combineSignup';
+import StorePage from '../page/store';
+import Products from '../page/Products';
+
 
 const router = createBrowserRouter([
   {
@@ -67,7 +70,25 @@ const router = createBrowserRouter([
         <StudentSignup /> 
       </>
     ),
-  }
+  },
+  {
+    path: '/store',
+    element: (
+      <>
+        <Navbar />
+        <StorePage /> 
+      </>
+    ),
+  },
+  {
+    path: '/products',
+    element: (
+      <>
+        <Navbar />
+        <Products /> 
+      </>
+    ),
+  },
   
 ]);
 
